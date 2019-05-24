@@ -1,6 +1,9 @@
 body{
-  font-family:Verdana;
+  font-family:'Verdana';
   background:#fff; 
+}
+a{
+  color:#e1e1e1;
 }
 .callout-bar{
   background-color:#000;
@@ -8,6 +11,10 @@ body{
   padding:10px;
   text-align:center;
   color:#fff;
+}
+#main-nav{
+  display:flex;
+  justify-content:space-between;
 }
 #main-content{
   text-align:left;
