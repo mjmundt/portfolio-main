@@ -1,29 +1,150 @@
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "main.css" />
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home | Marcel &amp; Adrianna's Destination Wedding</title>
+<!--STYLESHEETS-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Muli:300i&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="main.css" />
+<!--SCRIPTS-->    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<section id="navigation">
-  <div class"callout-bar">
-     <span>Enjoy this content!</span>
-  </div>
-  <nav id="main-nav" class="row">
-    <div class="col-12">
-       <a href="index.html"><span>Home</span></a>
-      <a href="index.html"><span>About Me</span></a>
-      <a href="index.html"><span>My Work</span></a>    
-    </div>
-  </nav>
-</section>
-<section id="main-content">
-  <div>
-    <h2>My name is</h2>
-    <h1>Marcel Mundt</h1>
-    <p>A Senior Front-End Webdeveloper for Weyco Group Inc with a passion for viewing the world from different perspectives. I enjoy traveling becuase it feeds my mind with new perspectives, I enjoy writing becuase I can save my thoughts, and I enjoy exercise because you need a healthy body to support a healthy mind. </p>
-  </div>
-</section>
-<section id="footer">
-  <div>
-    
-  </div>
-</section>
+</head>
+
+<body>
+<main class="container-fluid">
+    <section id="top__bar" class="row">
+        <!--ENTER INFORMATION FOR TOP BAR-->
+        <h1>Marcel &amp; Adrianna's Destination Wedding</h1>
+        <div id="nav__toggle" class="">&raquo;</div>
+    </section>
+    <section id="navigation">
+      <nav id="main__nav" class="row">
+        <div class="col-md-3 col-12 nav__box">
+           <a class="nav__box__link" href="#couple" data-target="#couple"></a>
+           <span>The Couple</span> 
+        </div>
+        <div class="col-md-3 col-12 nav__box">
+           <span>The Party</span> 
+           <a class="nav__box__link" href="#party" data-target="#party"></a>
+        </div>
+        <div class="col-md-3 col-12 nav__box">
+           <span>The Venue</span> 
+           <a class="nav__box__link" href="#venue" data-target="#venue"></a>
+        </div>
+        <div class="col-md-3 col-12 nav__box">
+           <a class="nav__box__link" href="#wedding" data-target="#wedding"></a>
+           <span>The Wedding</span> 
+        </div>
+      </nav>
+    </section>
+    <section id="main-content" class="row">
+      <!--The couple section-->
+      <div id="couple" class="col-12 mb-5">
+        <!--Desktop-->
+        <div class="row d-none d-md-flex">
+         <div id="box__one" class="col-md-6 col-12 box__text">
+            <h2>Marcel</h2>
+            <p>This person is awesome. They love to have fun and enjoy life.</p>
+            <button id="btn__one" class="btn btn-primary">See Adrianna &raquo;</button>
+         </div>
+         <div class="col-md-6 col-12 box__img">
+             <div class="row">
+                 <img class="img-fluid" alt="A man looking into the camera" src="images/couple.jpg" />
+             </div>
+         </div> 
+         <div id="box__two" class="col-md-6 col-12 box__text">
+            <h2>Adrianna</h2>
+            <p>This person is crazy. They love to have fun and enjoy life.</p>
+            <button id="btn__two" class="btn btn-primary">&laquo; See Marcel</button>
+         </div>
+        </div>
+        <!--Mobile-->
+        <div class="row d-flex d-md-none">
+         <div id="box__one__mobile" class="col-12 box__text">
+            <h2>Marcel</h2>
+            <p>This person is awesome. They love to have fun and enjoy life.</p>
+            <button id="btn__one__mobile" class="btn btn-primary mobile">See Adrianna &raquo;</button>
+         </div>
+         <div id="box__two__mobile" class="col-12 box__text">
+            <h2>Adrianna</h2>
+            <p>This person is crazy. They love to have fun and enjoy life.</p>
+            <button id="btn__two__mobile" class="btn btn-primary mobile">&laquo; See Marcel</button>
+         </div>
+         <div class="col-md-6 col-12 box__img">
+             <div class="row">
+                 <img class="img-fluid" alt="A man looking into the camera" src="images/couple.jpg" />
+             </div>
+         </div> 
+        </div>
+      </div>
+      <!--The wedding party section-->
+      <div id="party" class="col-12 mb-5">
+        <div class="row">
+         <div class="col-md-4 col-6 order-md-0 order-1">
+             <div class="row">
+                 <img class="img-fluid" alt="A man looking into the camera" src="images/ladies.jpg" />
+             </div>
+         </div>
+         <div class="col-md-4 col-12 d-flex order-md-1 order-0 party__middle">
+             <div class="row align-self-start">
+                <h2><span class="party__arrow">&lsaquo;</span> Maria &amp; Aracely</h2>
+                <p>This person is awesome. They love to have fun and enjoy life.</p>
+             </div>
+             <div class="row align-self-end">
+                <h2>Isaiah &amp; Miguel <span class="party__arrow">&rsaquo;</span></h2>
+                <p>This person is awesome. They love to have fun and enjoy life.</p>
+             </div>
+         </div>
+         <div class="col-md-4 col-6 order-md-2 order-2">
+             <div class="row">
+                 <img class="img-fluid" alt="A man looking into the camera" src="images/men.jpg" />
+             </div>
+         </div>
+        </div>
+      </div>
+      <!--The Venue section-->
+      <div id="venue" class="col-12 mb-5">
+        <div class="row">
+         <div id="big__img" class="col-6">
+             <div class="row">
+                 <img class="img-fluid" alt="A man looking into the camera" src="images/iberostar.jpg" />
+             </div>
+         </div>
+         <div id="no__img" class="col-6">
+             <div class="row d-flex">
+                 <div id="big__img__toggle">&raquo;</div>
+                 <h2>The Beautiful Iberostar</h2>
+             </div>
+         </div>
+        </div>
+      </div>
+      <!--The Wedding section-->
+      <div id="wedding" class="col-12 mb-5">
+        <div class="row">
+         <div class="col-4">
+             <div class="row">
+                 <img class="img-fluid" alt="A man looking into the camera" src="images/ladies.jpg" />
+             </div>
+         </div>
+         <div class="col-4">
+            <h2>Marcel</h2>
+            <p>This person is awesome. They love to have fun and enjoy life.</p>
+         </div>
+         <div class="col-4">
+             <div class="row">
+                 <img class="img-fluid" alt="A man looking into the camera" src="images/couple.jpg" />
+             </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div>
+
+      </div>
+    </section>
+</main>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
