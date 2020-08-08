@@ -1,106 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
-main{
-    overflow: hidden;
-    font-family: 'Muli';
+body {
+    font-family: 'Nunito', sans-serif;
 }
-h1{
-   font-family: 'Dancing Script'; 
-    font-size: 20px;
+h1,h2,h3{
+    font-family: 'Bebas Neue', cursive;
 }
-h2{
-    font-family: 'Dancing Script';
-    font-size: 40px;
-}
-#top__bar{
-    text-align: center;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-}
-#navigation{
-    display: none;
-}
-#nav__toggle{
-    font-size: 2rem;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 45px;
-}
-#nav__toggle:hover{
-    transition: all .3s ease-in;
-    top: 50px;
-    cursor: pointer;
-}
-#box__two,
-#box__two__mobile{
-    opacity: 0;
-    max-width: 0%;
-    padding: 0;
-}
-#big__img__toggle{
-    font-size: 5rem;
-    position: absolute;
-    left: 2rem;
-}
-#big__img__toggle:hover{
-    transition: all .3s ease-in;
-    left: 3rem;
-    cursor: pointer;
-}
-.party__middle{
-    padding: 3rem;
-}
-.btn-primary{
-    border-radius: 0;
-    border: none;
-    border-bottom: 2px solid #000;
-    background: transparent;
-    color: #000;
-}
-.btn-primary:hover{
-    transition: all .3s linear;
-    background: transparent;
-    padding: .375rem 1.25rem;
-    color: #B8C5D6;
-    border-bottom: 2px solid #f2e9e4;
-}
-
-.box__text{
-    padding: 100px;
-}
-.nav__box{
-    font-family: 'Muli';
-    display: flex;
+#hero-image{
+    height: 20vw;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-color: #E0E0E0;
+}
+.logo{
+    font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    height: 200px;
-    background-color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.5rem; 
 }
-.nav__box:hover{
-    transition: background-color .3s linear;
-    background-color: #f2dfd7;
-    cursor: pointer;
+.navbar a {
+    color:#000;
 }
-.nav__box__link{
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height:100%;
-    z-index: 0;
-    left: 0;
-    right: 0;
-}
-#couple{
-    background-color: #f2dfd7;
-}
-@media (max-width: 992px){
-.nav__box{
-    height: 100px;
-}
-.box__text{
-    padding: 50px;
-}
+.price-box h3{
+    border-bottom: 3px solid #000;
 }
